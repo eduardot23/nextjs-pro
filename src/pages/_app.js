@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import MainLayout from '@/Layout/MainLayout'
+import '@/styles/tailwind.css'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return(
+    <>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </> 
+  )
 }
